@@ -1,0 +1,20 @@
+%load compress
+%load custom_filters
+html
+    head
+        title
+            Home   
+        > meta charset='UTF-8'
+        > link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico"
+        script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ||
+        %compress js file 
+            {% comment %}
+            script src="/static/js/one.js" type="text/javascript" charset="utf-8" ||
+            {% endcomment %}
+            script type="text/javascript" charset="utf-8" VERBATIM
+                obj.value = "value";
+                obj.value = "lol";
+        %compress css file 
+            > link rel="stylesheet" href="{{STATIC_URL}}styles/_global.sass" type="text/x-sass" charset="utf-8"
+    body
+        h1 | awesome content
