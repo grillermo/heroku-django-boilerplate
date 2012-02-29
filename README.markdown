@@ -1,4 +1,4 @@
-# Django-Heroku-BoilerPlate
+# heroku-django-boilerplate
 
 ## Rationale
 This is all it takes to push to a heroku app repo.
