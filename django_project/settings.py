@@ -100,7 +100,7 @@ LOGIN_URL          = '/'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_ERROR_URL    = '/'
 
-ROOT_URLCONF = 'generic.urls'
+ROOT_URLCONF = 'django_project.urls'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
