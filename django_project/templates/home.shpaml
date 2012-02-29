@@ -1,15 +1,16 @@
-%load assets
-%load custom_filters
-html
-    head
-        title
-            Home   
-        > meta charset='UTF-8'
-        > link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico"
-        script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ||
-        %assets 'index_sass'
-            > link rel='stylesheet' href='{{ ASSET_URL }}' type='text/css' charset='utf-8'
-        %assets 'global_js'
-            > script src='{{ ASSET_URL }}' type='text/javascript' ||
-    body
-        h1 | awesome content
+%spaceless
+    %load assets
+    %load custom_filters
+    html
+        head
+            title
+                Home   
+            > meta charset='UTF-8'
+            > link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico"
+            script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ||
+            %assets 'index_sass'
+                > link rel='stylesheet' href='{{ ASSET_URL }}' type='text/css' charset='utf-8'
+            %assets 'global_js'
+                > script src='{{ ASSET_URL }}' type='text/javascript' ||
+        body
+            h1 | awesome content
