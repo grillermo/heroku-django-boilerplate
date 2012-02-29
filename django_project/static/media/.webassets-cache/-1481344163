@@ -1,0 +1,52 @@
+/* line 1, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+/* line 8, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+* focus {
+  outline: 0;
+}
+
+/* line 11, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 16, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 19, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 23, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 27, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+blockquotebefore, blockquoteafter, qbefore, qafter {
+  content: "";
+}
+
+/* line 30, /home/grillermo/c/proyectos/heroku-generic/django_project/static/styles/_reset.sass */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 3 */
+h1, h2, h3 {
+  font-size: 4em;
+}
