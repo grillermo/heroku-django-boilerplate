@@ -4,6 +4,7 @@ import sys
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
+sys.path[0:0] = (os.path.join(ROOT_PATH,'libs'),)
 
 ADMINS = (
     ('Guillermo','guillermo@bandtastic.me'),
@@ -120,6 +121,7 @@ INSTALLED_APPS = (
     'annoying',
     'south',
     'social_auth',
+    
     'django_assets',
     
     'main',
