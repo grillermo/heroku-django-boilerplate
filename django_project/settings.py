@@ -8,11 +8,12 @@ ROOT_PATH = os.path.abspath(os.path.dirname(__file__))
 ADMINS = (
     ('Guillermo','guillermo@bandtastic.me'),
 )
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'dev@bandtastic.me'
-EMAIL_HOST_PASSWORD = 'exbFsMjq7fKmyTFRZR'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 
 MANAGERS = ADMINS
@@ -41,19 +42,15 @@ STATIC_URL = '/static/'
 
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 MEDIA_ROOT = os.path.join(ROOT_PATH,'static/media/')
-MEDIA_URL = os.path.join(ROOT_PATH,'static/')
-COMPRESS_URL = STATIC_URL
 
 STATICFILES_DIRS = (
     os.path.join(ROOT_PATH,'static'),
 )
 
-COMPRESS_ROOT = STATICFILES_DIRS[0]
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder', 
 )
 
 SECRET_KEY = 'ye5kgt9aqr#k-c+fkbqw*jxnr=h5&li0l862@laza%j1sz3k()'
@@ -102,6 +99,14 @@ LOGIN_ERROR_URL    = '/'
 
 ROOT_URLCONF = 'django_project.urls'
 
+SASS_BIN = '/home/grillermo/.rvm/gems/ree-1.8.7-2011.03/bin/sass'
+
+ASSETS_DEBUG = False
+ASSETS_UPDATER = False
+ASSETS_CACHE = False
+ASSETS_EXPIRE = False
+ASSETS_ROOT = os.path.join(ROOT_PATH,'static')
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,16 +119,12 @@ INSTALLED_APPS = (
     'django_extensions',
     'annoying',
     'south',
-    'compressor',
     'social_auth',
+    'django_assets',
     
     'main',
 )
 
-COMPRESS_PRECOMPILERS = (
-    ('text/x-sass','/home/grillermo/.rvm/gems/ree-1.8.7-2011.03/bin/sass {infile} {outfile} --style compressed'),
-    ('text/x-scss','/home/grillermo/.rvm/gems/ree-1.8.7-2011.03/bin/sass --scss {infile} {outfile}'),
-)
 
 LOGGING = {
     'version': 1,
